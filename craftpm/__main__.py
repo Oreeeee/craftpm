@@ -3,8 +3,9 @@ import dataclasses
 import json
 import sys
 
+from .Downloader import Downloader
 from .get_dl_links import Paper
-from .structs import Component, CraftProject
+from .structs import Component, CraftProject, Download
 
 
 def init() -> None:
@@ -26,7 +27,7 @@ def init() -> None:
 
 
 def update() -> None:
-    print(Paper.get_download_link("1.20.2"))
+    Downloader([Download("server.jar", Paper.get_download_link("1.20.2"))])
 
 
 def main() -> int:

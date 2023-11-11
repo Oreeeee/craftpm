@@ -7,7 +7,7 @@ setup(
     author="Oreeeee",
     url="https://github.com/Oreeeee/craftpm",
     packages=["craftpm"],
-    install_requires=["requests"],
+    install_requires=["requests", "rich"],
     classifiers=[
         "Development Status :: 1 - Planning",
         "Environment :: Console",
